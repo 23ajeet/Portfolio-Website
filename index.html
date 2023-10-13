@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf7fb;
+            color: rgb(255, 157, 0);
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+            /* background-image: url(ajeet\ \(2\).jpg); */
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* text-decoration: none; */
+        }
+
+        .logo {
+            width: 140px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 35px;
+
+        }
+
+        nav ul li a {
+            color: #cob6ff;
+            text-decoration: none;
+            font-size: 33px;
+            position: relative;
+
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-text {
+            margin-top: 20%;
+            font-size: 30px;
+        }
+
+        .header-text h1 {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+
+        .header-text h1 span {
+
+            font-size: 53px;
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            color: rgb(245, 245, 249);
+            text-shadow: 3px 3px 20px rebeccapurple, -2px 1px 30px #02210b;
+            /* text-shadow: 3px 3px 20px #1A2238, -2px 1px 30px #1A2238; */
+
+
+        }
+
+        /* about css */
+
+        #about {
+            padding: 80px 0px;
+            color: aquamarine;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .image1 {
+            margin-top: 300px;
+            /* border: 2px solid red; */
+            width: 700px;
+            height: 900px;
+            /* overflow: hidden; */
+            /* width: 100%;
+            height: 100%; */
+            object-fit: contain;
+            box-shadow: -5px -5px
+                /*10px*/
+                22px #FF6A3D;
+
+
+            /* shadow effect */
+
+
+
+        }
+
+        .image1 img {
+            width: 700px;
+            height: 900px;
+        }
+
+        #home {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .about-col-1 {
+            margin-top: 300px;
+            border: 2px solid red;
+            width: 700px;
+            height: 900px;
+            /* overflow: hidden; */
+            /* width: 100%;
+            height: 100%; */
+            object-fit: contain;
+
+        }
+
+        .about-col-1 img {
+            width: 700px;
+            height: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="">
+                <ul class="nav-ul">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div id="home">
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm <span>Ajeet</span> <br>from India</h1>
+                </div>
+                <div class="image1">
+                    <img src="ajeet (2).jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
